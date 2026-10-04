@@ -83,3 +83,15 @@ End-to-end modern data stack (ELT) architecture illustrating raw data ingestion,
 | **Transformation** | dbt | Dimensional SQL modeling (Star Schema) |
 | **Quality / Testing** | Great Expectations | Schema and null-check assertions |
 | **Consumption / Viz** | Python / matplotlib | Exploratory analysis, Pareto, and adoption modeling |
+
+## 👥 Team & Roles
+
+This project was delivered by a five-member team as part of the NTU SCTP Advanced Professional Certificate in Data Science & AI (Module 2).
+
+| Member | Role | Key Contributions |
+|---|---|---|
+| Gina | **Data Ingestion & GCP Setup** | Ingested raw Kaggle CSV sources into BigQuery raw and staging datasets; configured the GCP project and data loading. |
+| Jamie | **dbt Modeling & Star Schema** | Designed and built the dimensional model in dbt: dimensions (`dim_customers`, `dim_products`) and facts (`fct_orders`, `fct_order_items`). |
+| Ajmal | **Data Quality & Testing** | Implemented Great Expectations and dbt data tests (`not_null`, `unique`, referential integrity) to validate the warehouse layer. |
+| Michael Liew | **Python Analysis & Visualizations** | Connected to BigQuery via SQLAlchemy/Pandas to analyse the modelled data: monthly sales trends, RFM customer segmentation and product performance. Produced the project's key findings: the **Pareto analysis** of revenue concentration (matplotlib/seaborn) and **Monthly Category Revenue Trends (MoM growth)** comparing the Top 5 vs Bottom 5 categories. |
+| Steiner | **Documentation & Presentation Lead** | Created the architecture and data-flow diagrams (Draw.io) and led the executive presentation deck. |
